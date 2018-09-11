@@ -18,3 +18,4 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 ## Problems tagged Hard
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 ------------|---------|----------|------------------|-----------------|-----------|------------------|-------
+135  | [Max Candy](https://leetcode.com/problems/candy/) | [Click](../master/src/LC135.cs) | O(n) | O(n) | 11-Sept | 50 | Greedy
