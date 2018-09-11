@@ -10,7 +10,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 ## Problems tagged Medium
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 ------------|---------|----------|------------------|-----------------|-----------|------------------|-------
-200  | [Find number of islands](https://leetcode.com/problems/number-of-islands/) | [Click](../master/src/LC200.cs) | O(r * c) | O(r * c) | 10-Sept | 30 | Union-Find
+200  | [Find number of islands](https://leetcode.com/problems/number-of-islands/) | [Click](../master/src/LC200.cs) | O(rc) | O(rc) | 10-Sept | 30 | Union-Find
 34   | [First and last occurance in sorted array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Click](../master/src/LC34.cs) | O(log n) | O(1) | 11-Sept | 25 | Binary Search
 
 ## Problems tagged Hard
