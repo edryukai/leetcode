@@ -23,6 +23,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 539  | [Find smallest time diff window](https://leetcode.com/problems/minimum-time-difference/) | [Click](../master/src/LC539.cs) | O(1) | O(1) | 11/09 | 35 | Sliding Window, Sort
 220  | [Contains Duplicate 3](https://leetcode.com/problems/contains-duplicate-iii/) | [Click](../master/src/LC220.java) | O(nlogk) | O(k) | 12/09 | 45 | BST
 133  | [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [Click](../master/src/LC133.cs) | O(V+E) | O(V+E) | 14/09 | 12 | BFS
+039  | [Some Backtracking Qns](https://leetcode.com/problems/combination-sum/description/) | [Click](../master/src/Backtracking.cs) | depends | depends | 14/09 | 80 | Backtracking
 
 ## Problems tagged Hard
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
