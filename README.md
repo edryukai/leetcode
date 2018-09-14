@@ -9,6 +9,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 896  | [Is Array Monotonic](https://leetcode.com/problems/monotonic-array/) | [Click](../master/src/LC896.cs) | O(1) | O(n) | 11-Sept | 10 | Array
 217  | [Contains Duplicate 1](https://leetcode.com/problems/contains-duplicate/description/) | [Click](../master/src/LC217.cs) | O(n) | O(n) | 12-Sept | 5 | HashTable
 219  | [Contains Duplicate 2](https://leetcode.com/problems/contains-duplicate-ii/description/) | [Click](../master/src/LC219.cs) | O(n) | O(n) | 12-Sept | 5 | HashTable
+007  | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [Click](../master/src/LC007.cs) | O(1) | O(1) | 14-Sept | 10 | Math
 
 ## Problems tagged Medium
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
@@ -17,6 +18,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 34   | [First and last occurance in sorted array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Click](../master/src/LC34.cs) | O(log n) | O(1) | 11-Sept | 25 | Binary Search
 539  | [Find smallest time diff window](https://leetcode.com/problems/minimum-time-difference/) | [Click](../master/src/LC539.cs) | O(1) | O(1) | 11-Sept | 35 | Sliding Window, Sort
 220  | [Contains Duplicate 3](https://leetcode.com/problems/contains-duplicate-iii/) | [Click](../master/src/LC220.java) | O(nlogk) | O(k) | 12-Sept | 45 | BST
+133  | [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [Click](../master/src/LC133.cs) | O(V+E) | O(V+E) | 14-Sept | 12 | BFS
 
 ## Problems tagged Hard
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
