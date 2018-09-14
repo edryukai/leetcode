@@ -10,6 +10,8 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 217  | [Contains Duplicate 1](https://leetcode.com/problems/contains-duplicate/description/) | [Click](../master/src/LC217.cs) | O(n) | O(n) | 12-Sept | 5 | HashTable
 219  | [Contains Duplicate 2](https://leetcode.com/problems/contains-duplicate-ii/description/) | [Click](../master/src/LC219.cs) | O(n) | O(n) | 12-Sept | 5 | HashTable
 007  | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [Click](../master/src/LC007.cs) | O(1) | O(1) | 14-Sept | 10 | Math
+266  | [Palindromic Permutation](https://leetcode.com/problems/palindrome-permutation/description/) | [Click](../master/src/LC266.cs) | O(n) | O(n) | 14-Sept | 10 | HashTable
+020  | [Balanced Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Click](../master/src/LC020.cs) | O(n) | O(n) | 14-Sept | 10 | Stack
 
 ## Problems tagged Medium
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
