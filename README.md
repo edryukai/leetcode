@@ -24,6 +24,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 220  | [Contains Duplicate 3](https://leetcode.com/problems/contains-duplicate-iii/) | [Click](../master/src/LC220.java) | O(nlogk) | O(k) | 12/09 | 45 | BST
 133  | [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [Click](../master/src/LC133.cs) | O(V+E) | O(V+E) | 14/09 | 12 | BFS
 039  | [Some Backtracking Qns](https://leetcode.com/problems/combination-sum/description/) | [Click](../master/src/Backtracking.cs) | depends | depends | 14/09 | 80 | Backtracking
+022  | [Generate Balanced Parens](https://leetcode.com/problems/generate-parentheses/description/) | [Click](../master/src/LC022.cs) | O(1) | O(n) | 14/09 | 15 | Backtracking
 
 ## Problems tagged Hard
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
