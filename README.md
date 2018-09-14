@@ -12,6 +12,8 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 007  | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [Click](../master/src/LC007.cs) | O(1) | O(1) | 14-Sept | 10 | Math
 266  | [Palindromic Permutation](https://leetcode.com/problems/palindrome-permutation/description/) | [Click](../master/src/LC266.cs) | O(n) | O(n) | 14-Sept | 10 | HashTable
 020  | [Balanced Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Click](../master/src/LC020.cs) | O(n) | O(n) | 14-Sept | 10 | Stack
+226  | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | [Click](../master/src/LC226.cs) | O(1) | O(n) | 14-Sept | 5 | Tree
+053  | [Kadane](https://leetcode.com/problems/maximum-subarray/description/) | [Click](../master/src/LC053.cs) | O(1) | O(n) | 14-Sept | 5 | Array
 
 ## Problems tagged Medium
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
