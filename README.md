@@ -14,6 +14,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 020  | [Balanced Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Click](../master/src/LC020.cs) | O(n) | O(n) | 14/09 | 10 | Stack
 226  | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | [Click](../master/src/LC226.cs) | O(1) | O(n) | 14/09 | 5 | Tree
 053  | [Kadane](https://leetcode.com/problems/maximum-subarray/description/) | [Click](../master/src/LC053.cs) | O(1) | O(n) | 14/09 | 5 | Array
+905  | [DNF variation](https://leetcode.com/problems/sort-array-by-parity/description/) | [Click](../master/src/LC905.cs) | O(n) | O(1) | 17/09 | 10 | Array
 
 ## Problems tagged Medium
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
