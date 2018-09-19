@@ -22,12 +22,12 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 200  | [Find number of islands](https://leetcode.com/problems/number-of-islands/) | [Click](../master/src/LC200.cs) | O(rc) | O(rc) | 10/09 | 30 | Union-Find
 34   | [First and last occurance in sorted array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Click](../master/src/LC34.cs) | O(log n) | O(1) | 11/09 | 25 | Binary Search
 539  | [Find smallest time diff window](https://leetcode.com/problems/minimum-time-difference/) | [Click](../master/src/LC539.cs) | O(1) | O(1) | 11/09 | 35 | Sliding Window, Sort
+681  | [Next Closest Time](https://leetcode.com/problems/next-closest-time/description/) | [Click](../master/src/LC681.cs) | O(1) | O(1) | 19/09 | 45 | Backtracking/DFS
 220  | [Contains Duplicate 3](https://leetcode.com/problems/contains-duplicate-iii/) | [Click](../master/src/LC220.java) | O(nlogk) | O(k) | 12/09 | 45 | BST
 133  | [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | [Click](../master/src/LC133.cs) | O(V+E) | O(V+E) | 14/09 | 12 | BFS
 039  | [Some Backtracking Qns](https://leetcode.com/problems/combination-sum/description/) | [Click](../master/src/Backtracking.cs) | depends | depends | 14/09 | 80 | Backtracking
 022  | [Generate Balanced Parens](https://leetcode.com/problems/generate-parentheses/description/) | [Click](../master/src/LC022.cs) | O(1) | O(n) | 14/09 | 15 | Backtracking
 079  | [Word Search](https://leetcode.com/problems/word-search/description/) | [Click](../master/src/LC079.cs) | O(1) | O(rc) | 14/09 | 30 | Backtracking
-681  | [Next Closest Time](https://leetcode.com/problems/next-closest-time/description/) | [Click](../master/src/LC681.cs) | O(1) | O(1) | 19/09 | 45 | Backtracking/DFS
 
 ## Problems tagged Hard
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
