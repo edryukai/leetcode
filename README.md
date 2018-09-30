@@ -29,6 +29,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 039  | [Some Backtracking Qns](https://leetcode.com/problems/combination-sum/description/) | [Click](../master/src/Backtracking.cs) | depends | depends | 14/09 | 80 | Backtracking
 022  | [Generate Balanced Parens](https://leetcode.com/problems/generate-parentheses/description/) | [Click](../master/src/LC022.cs) | O(1) | O(n) | 14/09 | 15 | Backtracking
 079  | [Word Search](https://leetcode.com/problems/word-search/description/) | [Click](../master/src/LC079.cs) | O(1) | O(rc) | 14/09 | 30 | Backtracking
+360  | [Sorted Transformed Array](https://leetcode.com/problems/sort-transformed-array/description/) | [Click](../master/src/LC360.cs) | O(n) | O(n) | 30/09 | 30 | Two Pointers
 
 ## Problems tagged Hard
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
