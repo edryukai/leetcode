@@ -1,4 +1,5 @@
 // Elegant af Java solution first using BST, then an alternate straight forward C# solution
+// O(n log n)
 // Using BST
 // For every element, check immediate lowest and immediate highest
 // If the difference in either is k+1, it means no flowers bloomed !
@@ -26,6 +27,32 @@ class Solution {
         
         return -1;
     }
+}
+
+// ALITER: Moving window
+// O(n)
+// Logic:
+//  Let days[i] represent the day flower in position i+1 blooms
+//  A window [left,right] is a valid window if:
+//      (i) there are k elements between them (not inclusive)
+//      (ii) for every element between left and right,  days[i] > days[left] and days[i] > days[right]
+//              i.e all the elements between left and right bloomed *after* left and right did
+// So we start that window of size k+1 at left = 0, right = k+1 (such that there are k elements in middle)
+// Whenever we encounter anomaly, we start a new window there
+
+public int kEmptySlots(int[] flowers, int k) {
+    int[] days =  new int[flowers.length];
+    for(int i=0; i<flowers.length; i++)days[flowers[i] - 1] = i + 1;
+    int left = 0, right = k + 1, res = Integer.MAX_VALUE;
+    for(int i = 0; right < days.length; i++){
+        if(days[i] < days[left] || days[i] <= days[right]){
+            if(i == right)res = Math.min(res, Math.max(days[left], days[right]));   //we get a valid subarray, and whatever day is max, that's the result
+            // otherwise start new window at index i
+            left = i; 
+            right = k + 1 + i;
+        }
+    }
+    return (res == Integer.MAX_VALUE)?-1:res;
 }
 
 // ALITER:
