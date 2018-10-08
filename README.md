@@ -38,4 +38,4 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 ------------|---------|----------|------------------|-----------------|-----------|------------------|-------
 135  | [Max Candy](https://leetcode.com/problems/candy/) | [Click](../master/src/LC135.cs) | O(n) | O(n) | 11/09 | 50 | Greedy
-683  | [K Empty Slots bw Flowers](https://leetcode.com/problems/k-empty-slots/description/) | [Click](../master/src/LC683.cs) | O(n) | O(nk) | 08/10 | 35 | Array
+683  | [K Empty Slots bw Flowers](https://leetcode.com/problems/k-empty-slots/description/) | [Click](../master/src/LC683.cs) | O(n) | O(nk) | 08/10 | 35 | BST

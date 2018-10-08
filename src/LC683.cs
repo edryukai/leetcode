@@ -1,3 +1,34 @@
+// Elegant af Java solution first using BST, then an alternate straight forward C# solution
+// Using BST
+// For every element, check immediate lowest and immediate highest
+// If the difference in either is k+1, it means no flowers bloomed !
+// Else add to bst and continue !
+
+class Solution {
+    public int kEmptySlots(int[] flowers, int k) {
+        TreeSet<Integer> bst = new TreeSet<>();
+        
+        for(int i = 0; i < flowers.length; i++) {
+            int current = flowers[i];
+            
+            // lower: Returns the greatest element strictly less than the given element, or null if there is no such element
+            Integer prev = bst.lower(current);
+            if(prev != null && current - prev == k+1)
+                return i+1;
+           
+            // higher: Returns the least element strictly greater than the given element, or null if there is no such element.
+            Integer next = bst.higher(current);
+            if(next != null && next - current == k+1)
+                return i+1;
+            
+            bst.add(current);
+        }
+        
+        return -1;
+    }
+}
+
+// ALITER:
 // https://leetcode.com/problems/k-empty-slots/description/
 // 683 H K empty slots in garden
 
