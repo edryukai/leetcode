@@ -3,6 +3,7 @@
 
 // Algo:
 // Moving Window
+// Logic is very similar to finding a subarray of maximum size that has two distinct values
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 
