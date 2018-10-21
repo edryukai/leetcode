@@ -20,6 +20,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 760  | [Mapping of anagrams](https://leetcode.com/problems/find-anagram-mappings/description/) | [Click](../master/src/LC760.cs) | O(n) | O(n) | 08/10 | 10 | HashTable
 532  | [Unique k-diff pairs](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/) | [Click](../master/src/LC532.cs) | O(n) | O(n) | 08/10 | 15 | HashTable
 482  | [License Key Formatting](https://leetcode.com/problems/license-key-formatting/description/) | [Click](../master/src/LC482.cs) | O(n) | O(n) | 08/10 | 30 | String, Tricky
+482  | [Backspace string compare](https://leetcode.com/problems/backspace-string-compare/description/) | [Click](../master/src/LC844.cs) | O(n) | O(1) | 21/10 | 20 | Stack
 
 ## Problems tagged Medium
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
