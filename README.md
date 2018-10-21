@@ -36,6 +36,7 @@ Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
 79  | [Word Search](https://leetcode.com/problems/word-search/description/) | [Click](../master/src/LC079.cs) | O(1) | O(rc) | 14/09 | 30 | Backtracking
 360  | [Sorted Transformed Array](https://leetcode.com/problems/sort-transformed-array/description/) | [Click](../master/src/LC360.cs) | O(n) | O(n) | 30/09 | 30 | Two Pointers
 904  | [Fruits and Buckets](https://leetcode.com/problems/fruit-into-baskets/description/) | [Click](../master/src/LC904.cs) | O(n) | O(n) | 21/10 | 30 | Sliding Window
+299  | [Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/description/) | [Click](../master/src/LC299.cs) | O(n) | O(n) | 21/10 | 20 | HashTable
 
 ## Problems tagged Hard
 Problem ID  | Problem | Solution | Time | Space | Solved on | TTS (min) | Topic
