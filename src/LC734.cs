@@ -1,6 +1,10 @@
 // https://leetcode.com/problems/sentence-similarity/description/
 // Since transitivity doesn't hold according to the question we don't have to union-find this
 // O(n) time and space
+// Edge case:
+//      Think about the case where "x" could be similar to more than one word
+//      So Dict<string,List<string>> is needed
+
 public class Solution {
     public bool AreSentencesSimilar(string[] words1, string[] words2, string[,] pairs) {
         if(words1.Length != words2.Length) return false;
