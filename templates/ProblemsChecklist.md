@@ -24,7 +24,7 @@
 - [x] [232] Queue using stacks
 - [ ] [155] Min stack
 - [x] [20] Valid Parentheses
-- [ ] [844] Backspace string compare
+- [x] [844] *Backspace string compare*
 
 ## Divide and Conquer
 ### Hard (4/4)
