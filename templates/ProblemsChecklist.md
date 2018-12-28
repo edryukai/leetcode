@@ -1,10 +1,13 @@
-### Stacks
+## Stacks
+### Hard (0/5)
+
 - [ ] [224] [H] Basic Calculator
 - [ ] [85] [H] Maximal Rectangle
 - [ ] [42] [H] Trapping rain water
 - [ ] [84] [H] Largest rectangle in histogram
 - [ ] [316] [H] Remove duplicate letters
 
+### Medium (2/11)
 - [ ] [173] [M] BST Iterator
 - [ ] [103] [M] Zig zag level order traversal
 - [ ] [94] [M] Binary Tree Inorder traversal
@@ -17,6 +20,7 @@
 - [ ] [250] [M] Evaluate Reverse Polish Notation
 - [ ] [341] [M] Flatten Nested List Iterator
 
+### Easy (3/5)
 - [x] [496] [E] Next greater element 1 [**]
 - [x] [232] [E] Queue using stacks
 - [ ] [155] [E] Min stack
