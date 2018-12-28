@@ -11,7 +11,7 @@
 - [ ] [103]  Zig zag level order traversal
 - [ ] [94]  Binary Tree Inorder traversal
 - [ ] [853]  Car fleet
-- [x] [503]  *Next Greater Element 2*
+- [x] [503]  **Next Greater Element 2**
 - [x] [556]  Next Greater Element 3
 - [ ] [739]  Daily temperatures
 - [ ] [394]  Decode string
@@ -20,11 +20,11 @@
 - [ ] [341]  Flatten Nested List Iterator
 
 ### Easy (3/5)
-- [x] [496] *Next greater element 1*
+- [x] [496] **Next greater element 1**
 - [x] [232] Queue using stacks
 - [ ] [155] Min stack
 - [x] [20] Valid Parentheses
-- [x] [844] *Backspace string compare*
+- [x] [844] **Backspace string compare**
 
 ## Divide and Conquer
 ### Hard (4/4)
@@ -34,7 +34,7 @@
 - [x] [493] Reverse Pairs
 
 ### Medium (3/3)
-- [x] [215] *Kth Largest element in array aka Quickselect*
+- [x] [215] **Kth Largest element in array aka Quickselect**
 - [x] [426] BST to sorted DLL
 - [x] [240] Search 2D matrix 2
 
