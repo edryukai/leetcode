@@ -34,3 +34,43 @@ public class Solution {
         return st.Count == 0;
     }
 }
+
+// Aliter
+//
+
+public class Solution {
+    public bool IsValid(string s) {
+        if(s == null || s.Length == 0) return true;
+
+        var dict = new Dictionary<char,char>();
+        dict[')'] = '(';
+        dict[']'] = '[';
+        dict['}'] = '{';
+
+        var opening = new HashSet<char>();
+        opening.Add('(');
+        opening.Add('[');
+        opening.Add('{');
+
+        var closing = new HashSet<char>();
+        closing.Add(')');
+        closing.Add(']');
+        closing.Add('}');
+
+        var st = new Stack<char>();
+        foreach(char x in s.ToCharArray()) {
+            if(opening.Contains(x)) {
+                st.Push(x);
+            }
+            else {
+                // invalid character / no matching opening brace / invalid match
+                if(!closing.Contains(x)) return false;
+                if(st.Count == 0) return false;
+                if(st.Pop() != dict[x]) return false;
+            }
+        }
+
+        // stack should be empty for a full match
+        return st.Count == 0;
+    }
+}
