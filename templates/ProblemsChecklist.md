@@ -50,7 +50,7 @@
 - [ ] [353] Design Snake game
 - [ ] [406] Queue reconstruction by height
 
-### Easy (0/3)
-- [ ] [346] Moving average from data stream
-- [ ] [232] Implement Queue using stacks
-- [ ] [933] Number of recent calls
+### Easy (3/3)
+- [x] [346] Moving average from data stream
+- [x] [232] Implement Queue using stacks
+- [x] [933] Number of recent calls
