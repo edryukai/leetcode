@@ -1,7 +1,15 @@
-## Stacks
-### Hard (0/5)
-- [ ] [224]  Basic Calculator
+## Dynamic Programming
+### Hard 
+- [ ] [363] Max sum of rectangle no larger than k
+- [ ] [312] Burst Balloons
 - [ ] [85]  Maximal Rectangle
+
+### Medium
+### Easy
+
+## Stacks (9/20)
+### Hard (0/4)
+- [ ] [224]  Basic Calculator
 - [ ] [42]  Trapping rain water
 - [ ] [84]  Largest rectangle in histogram
 - [ ] [316]  Remove duplicate letters
@@ -26,7 +34,7 @@
 - [x] [20] Valid Parentheses
 - [x] [844] **Backspace string compare**
 
-## Divide and Conquer
+## Divide and Conquer (9/9)
 ### Hard (4/4)
 - [x] [23] Merge K Sorted Lists
 - [x] [4] Mediam of two sorted arrays
@@ -42,12 +50,9 @@
 - [x] [53] Maximum subarray (Kadane)
 - [x] [169] Majority Element 1
 
-## Queue
-### Hard (0/1)
-- [ ] [363] Max sum of rectangle no larger than k
-
-### Medium (0/2)
-- [ ] [353] Design Snake game
+## Queue (5/5)
+### Medium (2/2)
+- [x] [353] Design Snake game
 - [x] [406] Queue reconstruction by height
 
 ### Easy (3/3)
