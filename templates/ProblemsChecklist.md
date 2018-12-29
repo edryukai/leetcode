@@ -48,9 +48,13 @@
 
 ### Medium (0/2)
 - [ ] [353] Design Snake game
-- [ ] [406] Queue reconstruction by height
+- [x] [406] Queue reconstruction by height
 
 ### Easy (3/3)
 - [x] [346] Moving average from data stream
 - [x] [232] Implement Queue using stacks
 - [x] [933] Number of recent calls
+
+// Go through solved questions and write down learnings (ex: stack and queue qns)
+// Also DQ and BST qns
+// 406 - Questions that can be done via bst could be done via bit/segt and sometimes through merge sort too
