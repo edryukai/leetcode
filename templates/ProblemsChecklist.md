@@ -11,7 +11,8 @@
 - [Stacks] (#stacks)
 - [Binary Search Tree] (#binary search tree)
 
-## Stacks (9/20)
+## Stacks
+### Stats (9/20)
 ### Hard (0/4)
 - [ ] [224]  Basic Calculator
 - [ ] [42]  Trapping rain water
@@ -38,7 +39,8 @@
 - [x] [20] Valid Parentheses
 - [x] [844] **Backspace string compare**
 
-## Binary Search Tree (7/16)
+## Binary Search Tree
+### Stats (7/16)
 ### Hard (2/6)
 - [ ] [683] K Empty Slots
 - [ ] [715] Range Module
@@ -65,7 +67,8 @@
 - [Queue] (#stacks)
 - [Divide and Conquer] (#divide and conquer)
 
-## Queue (5/5)
+## Queue 
+### Stats (5/5)
 ### Medium (2/2)
 - [x] [353] Design Snake game
 - [x] [406] Queue reconstruction by height
@@ -75,7 +78,8 @@
 - [x] [232] Implement Queue using stacks
 - [x] [933] Number of recent calls
 
-## Divide and Conquer (9/9)
+## Divide and Conquer 
+### Stats (9/9)
 ### Hard (4/4)
 - [x] [23] Merge K Sorted Lists
 - [x] [4] Mediam of two sorted arrays
