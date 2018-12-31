@@ -8,8 +8,8 @@
 ### Easy
 
 # Topics currently under progress
-- [Stacks] (#stacks)
-- [Binary Search Tree] (#binary search tree)
+- [Stacks](#stacks)
+- [Binary Search Tree](#binary-search-tree)
 
 ## Stacks
 ### Stats (9/20)
@@ -64,8 +64,8 @@
 - [x] [108] Sorted array to BST
 
 # Finished Topics
-- [Queue] (#stacks)
-- [Divide and Conquer] (#divide and conquer)
+- [Queue](#queue)
+- [Divide and Conquer](#divide-and-conquer)
 
 ## Queue 
 ### Stats (5/5)
