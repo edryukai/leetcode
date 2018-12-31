@@ -7,6 +7,8 @@
 ### Medium
 ### Easy
 
+# Topics currently under progress
+
 ## Stacks (9/20)
 ### Hard (0/4)
 - [ ] [224]  Basic Calculator
@@ -34,33 +36,6 @@
 - [x] [20] Valid Parentheses
 - [x] [844] **Backspace string compare**
 
-## Divide and Conquer (9/9)
-### Hard (4/4)
-- [x] [23] Merge K Sorted Lists
-- [x] [4] Mediam of two sorted arrays
-- [x] [315] Count of smaller numbers after self
-- [x] [493] Reverse Pairs
-
-### Medium (3/3)
-- [x] [215] **Kth Largest element in array aka Quickselect**
-- [x] [426] BST to sorted DLL
-- [x] [240] Search 2D matrix 2
-
-### Easy (2/2)
-- [x] [53] Maximum subarray (Kadane)
-- [x] [169] Majority Element 1
-
-## Queue (5/5)
-### Medium (2/2)
-- [x] [353] Design Snake game
-- [x] [406] Queue reconstruction by height
-
-### Easy (3/3)
-- [x] [346] Moving average from data stream
-- [x] [232] Implement Queue using stacks
-- [x] [933] Number of recent calls
-
-
 ## Binary Search Tree (7/16)
 ### Hard (2/6)
 - [ ] [683] K Empty Slots
@@ -83,6 +58,34 @@
 - [x] [700] Search in BST
 - [x] [270] Closest BST Value
 - [x] [108] Sorted array to BST
+
+# Finished Topics
+
+## Queue (5/5)
+### Medium (2/2)
+- [x] [353] Design Snake game
+- [x] [406] Queue reconstruction by height
+
+### Easy (3/3)
+- [x] [346] Moving average from data stream
+- [x] [232] Implement Queue using stacks
+- [x] [933] Number of recent calls
+
+## Divide and Conquer (9/9)
+### Hard (4/4)
+- [x] [23] Merge K Sorted Lists
+- [x] [4] Mediam of two sorted arrays
+- [x] [315] Count of smaller numbers after self
+- [x] [493] Reverse Pairs
+
+### Medium (3/3)
+- [x] [215] **Kth Largest element in array aka Quickselect**
+- [x] [426] BST to sorted DLL
+- [x] [240] Search 2D matrix 2
+
+### Easy (2/2)
+- [x] [53] Maximum subarray (Kadane)
+- [x] [169] Majority Element 1
 
 // Go through solved questions and write down learnings (ex: stack and queue qns)
 // Also DQ and BST qns
