@@ -9,7 +9,7 @@
 * **Logic**: 
   * Some ordering of elements to the right or left of a given value can be computed using BST, BIT, ST etc. So if we build a BST/ST out of given data, we can answer questions regarding range data. 
 * BIT/ST are particularly useful when underlying data is subject to change
-* Questions that are similar:
+* **Questions that are similar:**
 	* Count of smaller numbers after self (315) (H)
 	* Count reverse pairs (493) (H)
 
