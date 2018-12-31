@@ -60,6 +60,30 @@
 - [x] [232] Implement Queue using stacks
 - [x] [933] Number of recent calls
 
+
+## Binary Search Tree (7/16)
+### Hard (2/6)
+- [ ] [683] K Empty Slots
+- [ ] [715] Range Module
+- [x] [493] Reverse Pairs
+- [x] [315] Count of smaller numbers after self
+- [ ] [732] My Calendar 3
+- [ ] [272] Closest BST Value 2
+
+### Medium (2/7)
+- [ ] [776] Split BST
+- [ ] [731] My Calendar 2
+- [x] [109] Sorted LL to BST
+- [x] [426] BST to Sorted LL
+- [ ] [96] Unique BSTs
+- [ ] [701] Insert into BST
+- [ ] [173] BST Iterator
+
+### Easy (3/3)
+- [x] [700] Search in BST
+- [x] [270] Closest BST Value
+- [x] [108] Sorted array to BST
+
 // Go through solved questions and write down learnings (ex: stack and queue qns)
 // Also DQ and BST qns
 // 406 - Questions that can be done via bst could be done via bit/segt and sometimes through merge sort too
