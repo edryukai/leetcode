@@ -1,6 +1,10 @@
 # Balanced BST / Segment Tree / BIT
 
-## Count of smaller/larger numbers after self
+## Operations involving a lot of insertion/deletion AND search
+* **Logic**: BST supports O(log n) insertion/deletion and O(log n) for search
+* Balanced BST (along with BIT/ST) should often come to mind when data involves a lot of insertion and search ops
+
+## Count of smaller/larger numbers after self (data follows some ordering)
 * **Logic**: Some ordering of elements to the right or left of a given value can be computed using BST, BIT, ST etc. So if we build a BST/ST out of given data, we can answer questions regarding range data. 
 * BIT/ST are particularly useful when underlying data is subject to change
 * Questions that are similar:
