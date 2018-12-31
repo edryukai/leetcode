@@ -1,14 +1,14 @@
 // 23 - H - https://leetcode.com/problems/merge-k-sorted-lists/description/
 // Space: O(k) for the heap
 // Time: O(n log k) where n is total number of nodes because there's a log k time for every insertion/retrieval
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+
+import java.util.*;
+class ListNode {
+      int val;
+      ListNode next;
+      ListNode(int x) { val = x; }
+}
+
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists == null || lists.length == 0)
