@@ -8,6 +8,8 @@
 ### Easy
 
 # Topics currently under progress
+- [Stacks] (#stacks)
+- [Binary Search Tree] (#binary search tree)
 
 ## Stacks (9/20)
 ### Hard (0/4)
@@ -60,6 +62,8 @@
 - [x] [108] Sorted array to BST
 
 # Finished Topics
+- [Queue] (#stacks)
+- [Divide and Conquer] (#divide and conquer)
 
 ## Queue (5/5)
 ### Medium (2/2)
