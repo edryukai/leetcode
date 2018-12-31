@@ -9,11 +9,11 @@
 	* (For questions like “Remove Duplicate Letters”, you can also store the index of this next greater element)
 
 * **Side notes:**
-To find greatest element to right, we just do a reverse scan and update
-To find number of greater elements to right,
-	If all elements are unique, we can use a self balancing BST/ST
-	If elements are not unique, you have to build the BST/use ST
-To find next greater element, use stack
+	* To find greatest element to right, we just do a reverse scan and update
+	* To find number of greater elements to right:
+		* If all elements are unique, we can use a self balancing BST/ST
+		* If elements are not unique, you have to build the BST/use ST
+	* To find next greater element, use stack
 
 * **Questions that can be solved this way**:
 	* Next Greater Element 1 (496) (E)
@@ -23,7 +23,6 @@ To find next greater element, use stack
 ## Parentheses fashioned questions
 * If questions follow a “contained”/“parentheses” order, you can use stacks.
 * Store the aux result till you encounter a matching closing parentheses, for example in merging intervals
-
 * Questions that can be solved this way:
 	* Valid Parentheses (20) (E)
 	* Merge Intervals (56) (M)
