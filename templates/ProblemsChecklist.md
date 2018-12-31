@@ -11,6 +11,10 @@
 - [Stacks](#stacks)
 - [Binary Search Tree](#binary-search-tree)
 
+# Finished Topics
+- [Queue](#queue)
+- [Divide and Conquer](#divide-and-conquer)
+
 ## Stacks
 ### Stats (9/20)
 ### Hard (0/4)
@@ -62,10 +66,6 @@
 - [x] [700] Search in BST
 - [x] [270] Closest BST Value
 - [x] [108] Sorted array to BST
-
-# Finished Topics
-- [Queue](#queue)
-- [Divide and Conquer](#divide-and-conquer)
 
 ## Queue 
 ### Stats (5/5)
