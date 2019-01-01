@@ -15,9 +15,8 @@ public bool KMP(char[] text, char[] pattern) {
             j++;
         }
         else {
-            if(j != 0) {
+            if(j != 0)
                 j = lps[j-1];
-            }
             else
                 i++;
         }
@@ -44,9 +43,8 @@ private int[] ComputeLps(char[] pattern) {
             j++;
         }
         else {
-            if(j != 0) {
+            if(j != 0)
                 j = lps[j-1];
-            }
             else {  
                 // j == 0
                 // This happens when we kept doing j = lps[j-1] and eventually landed at the back of 
