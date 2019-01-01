@@ -47,7 +47,11 @@ private int[] ComputeLps(char[] pattern) {
             if(j != 0) {
                 j = lps[j-1];
             }
-            else {
+            else {  
+                // j == 0
+                // This happens when we kept doing j = lps[j-1] and eventually landed at the back of 
+                // lps array but still couldn't find a pattern match between i and j
+                // So we set lps[i] to 0 and increment i. j starts at index 0
                 lps[i] = 0;
                 i++;
             }
