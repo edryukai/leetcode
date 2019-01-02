@@ -69,8 +69,42 @@
 
 ## Mutex vs Monitor
 
-## Java Monitor, Hoare vs Mesa monitors
+* **Monitor**:
+  * In the producer-consumer problem, the consumer needs to wait on some conditional variable (aka _predicate_) to know that the producer has produced something
+  * This typically has to be done in a while loop. There are two issues here:
+    * a) Wastage of CPU cycles
+    * b) A probability that some other thread could come and change value of the predicate we have been waiting on
+  * While mutex and semaphores are OS level constructs, Monitors are programming language constructs
+  * So **monitor = mutex + 1 or more condition variables**. A single monitor can have multiple condition variables but the vice versa is not true
+  * Think about monitors as having two queues/sets: **entry set** and **wait set**
+    * If no other thread owns the monitor (i.e no other thread is executing actively inside the monitor section), then a new thread trying to acquire the monitor will acquire and own it too
+    * This thread (call it A), will execute within monitor section till it exits it, or till it calls **wait()** on an associated condition variable - in which case, it will get placed into **wait set/queue**
+    * Any new threads that want access to the monitor will be placed in **entry set/queue**
+    * Now let's say another thread, B wants to acquire the monitor. Since A is in wait queue, B can access the monitor, and execute it. If B exits monitor without calling **notify()** on the conditional variable, then A will remain in the wait set
+    * On similar lines, B could also call wait() and be placed in wait set, in which case some other thread has to come along and call notify() to pull A or B out of wait set
+  * Again, note that only one thread can own the monitor
+  * tldr - Monitors are mutex + wait/entry sets. They allow mutual exclusion, along with some coordination because of the wait() and notify()/signal() semantics
+
+## Monitors in Java
+
+* **Java Monitors**:
+  * Every object in java is a conditional variable, and has am **associated lock** that is intrinsic, hidden from developer
+  * Each jaba object exposes `wait()` and `notify()` methods
+  * Before we execute `wait()` on an object, we need to lock its hidden mutex. This is done implicitly through the **synchronized** keyword
+    * If you call wait() or notify() outside a synchronized block, Java throws _IllegalMonitorStateException_ reminding that the mutex wasn't acquired before wait() on condition var was invoked
+  * wait() and notify() can only be called by the thread after becoming owner of that monitor
+  * Ownership of monitor can be achieved in following ways:
+    * The method that the thread is executing has **synchronized** in its signature
+    * Thread is executing a block, that is synchronized on the object on which wait() or notify() will be called
+    * In case of a class, thread is executing a static method which is synchronized
 
 ## Semaphore vs Monitor
+
+* Monitors and semaphores can be used interchangeably as theoretically, one can be constructed/reduced out of the other. However -
+  * Monitors take care of atomically acquiring necessary locks
+  * In Semaphores, developer is expected to acquire and release locks properly
+* Semaphores are light weight compared to monitors. However, it's easier to misuse semaphores
+* Semaphores allow access to several threads to a given resource/critical section and have no concept of ownership. Monitors however give way to only a single thread and a thread can own the monitor at any time
+* Semaphores can manage missed signals, but with monitors, predicate has to be maintained along with conditional variable
 
 ## Amdahl's Law
