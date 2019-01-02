@@ -112,5 +112,5 @@
 * Amdahl's law specifies the cap on maximum speedup that can be achieved when parallelizing the execution of a program
 * Let's say `P` is the fraction of program that is parallelizable, so it follows that `1-P` part has to be executed serially
 * If `S(n)` denoted the speed up achieved by using *n* cores/threads, then:
-  `S(n) = frac{1}{(1-P) + frac{P}{n}}`
+  \Large S(n)=\frac{1}{(1\mP)\pfrac{P}{n}}
 
