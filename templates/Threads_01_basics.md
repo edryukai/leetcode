@@ -112,5 +112,14 @@
 * Amdahl's law specifies the cap on maximum speedup that can be achieved when parallelizing the execution of a program
 * Let's say `P` is the fraction of program that is parallelizable, so it follows that `1-P` part has to be executed serially
 * If `S(n)` denoted the speed up achieved by using *n* cores/threads, then:
-  \Large S(n)=\frac{1}{(1\mP)\pfrac{P}{n}}
+    `S(n) = 1 / {(1-P) + P/n}`
+* Example:
+  * If our program has 90% parallelizable portion `(P = 90% = 0.9)`, then speedup occurs as follows:
+    * n = 1 processor => `S(n) = 1`
+    * n = 2 processor => `S(n) = 1.81`
+    * n = 10 processor => `S(n) = 5.26`
+    * n = 100 processor => `S(n) = 9.17`
+    * n = 1000 procesor => `S(n) = 9.91`
+    * n = inifinite processor => `S(n) = 10`
+* Amdahl's law approximates, and hence should be taken with grain of salt. For more accurate estimates, refer **Gustafson's law**
 
