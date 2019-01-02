@@ -1,43 +1,4 @@
-## Canada Expansion
-
-### Small
-- [x] Sanket's PR: necessary fields and how they are used [9-9.30]
-- [x] Sanket's PR: new fields added [9.30 - 9.45]
-- [x] Wei's new PR? [9.45 - 10.15]
-
-### Medium
-- [x] Prakhar's changes (new function to return net languages) [10.15 - 10.45]
-- [x] Where are existing fields added in Supply logs? Add new field there [10.45 - 11.15]
-- [x] Function where they need to be initialized [11.15 - 11.45]
-- [ ] Wherever logging happens/init happens, set the net language as well [11.45 - 12.15]
-
-### Large
-- [ ] Raise MR
-
-
-### Sanket's changes
-#### Common types
-- _array<string> contentLanguages_
-- int adSelectionPolicy
-- long contentProvideOrgId
-
-#### Supply log event
-- string mescalValidationStatus
-- array<AdCount> requestedAds
-
-
-SupplyLogEvent.java
-Follow the trail of requestedAdOps
-array<string> requestedAdOps = null
-protected List<String> requestedAdOps = new ArrayList<String>();
-
-Q: How do we add field in: SupplyLogEvent$Builder class?
-Q: What is the function that Prakhar wrote?
-
-
-# Concurrency in Practice
-
-## Introduction
+## Introduction and basic concepts
 
 * Thread is the most basic unit of execution. It executes instructions serially 
 * A process can have multiple threads running as a part of it
@@ -91,7 +52,7 @@ Q: What is the function that Prakhar wrote?
 * Locking and signalling mechanisms in a multi threaded environment
 * **Mutex**
   * "Mutual Exclusion"
-  * _Guards access_ to shared data (primitives, arrays etc.) a.k.a helps in serializing access to shared state
+  * _Guards access_ to shared data (primitives, arrays etc.) a.k.a helps in serializing access to shared state (i.e by letting only a single item access critical section)
   * Allows only a single thread to access the resource
 * **Semaphore**
   * _Limits access_ to a collection of resources
@@ -104,7 +65,8 @@ Q: What is the function that Prakhar wrote?
   * In binary semaphore, different threads can call acquire and release
   * i.e a mutex is owned _by the thread acquiring it_ till the point it releases it (if a thread that doesn't own the mutex tries to unlock it, unexpected behavior occurs)
   * There is _no notion of ownership_ for semaphore
-  * Semaphores can be used for singalling, mutex can't
+  * Semaphores can be used for singalling, mutex can't. Ex: In producer-consumer problem, a producer can increase the semaphore count, thus notifying the consumer of the freshly produced item.
+
 ## Mutex vs Monitor
 
 ## Java Monitor, Hoare vs Mesa monitors
