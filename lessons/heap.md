@@ -48,4 +48,29 @@
 ## [659] Split array into consecutive subsequences 
 * Think of subsequences as intervals. You need to find the right interval for a current number 
 * The right interval would be the one with the largest "end" so far, since we have array in a sorted fashion
-* In case of tie break, one with shorter length will be returned 
+* In case of tie break, one with shorter length will be returned
+
+## [857] Min Wage for K Workers
+* `final_wage[i]/qual[i] = final_wage[j]/qual[j]`
+    *and there will be at least one guy in a group whose `final_wage` will be same as `min_wage`
+    *let's call that guy `captain` and ratio as `final_wage[capt]/qual[capt]` which is same as `min_wage[capt]/qual[capt]`
+* In a group of K people,
+    * capt determines the ratio.
+    * From the equation in first step, `final_wage[x] = ratio[capt] * qual[x]`
+    * So if we fix the capt, we fix a ratio and we can get final_wage of everyone in the group
+* Naively, this can be done greedily by fixing ratio and trying out all workers to see which k workers are best
+* Optimally, we note a few things:
+    * `total_wage = ratio * qual[1] + ratio * qual[2] + ... + ratio * qual[k]`
+    * which is same as `total_wage = ratio * sum(quality_of_group)`
+    * To minimize `total_wage`, we need a small `ratio`. **So we iterate over ratios and pick an optimal group**
+    * So we first calculate ratio of all workers, and sort them by ratio. Let's pick the first K workers now
+    * So `total_wage` now is `ratio[k-1]*sum(quality[0..k-1])`
+    * When we consider the next guy for our group of size k, we get guy with next higher ratio. This means ratio for entire group increased.
+    * Who do we out? The guy in our group with **highest quality**. Coz higher quality increases total wage
+        * Think about it. Pick some random guy in the group. This guy has some wage and some quality
+        * But the ratio is fixed, so his wage doesn't matter. So the only factor that affects our total sum is quality
+        * total_wage is directly proportional to quality so we kick the guy with max quality off the group
+    * tldr: for a given ratio of wage/quality, find minimum total_wage of k workers
+* FAQ: When we remove the worker with highest quality, it could as well be our new worker. Then we would be using his ratio, while he is not there.
+    * This case doesn't matter because, we will then be left with the same group as before, and we already calculate `total_wage` for that group with a lower ratio (since we are picking people based on sorted ratios, remember?)
+
