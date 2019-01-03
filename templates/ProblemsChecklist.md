@@ -15,11 +15,36 @@
 - [Queue](#queue)
 - [Divide and Conquer](#divide-and-conquer)
 
+## Heaps
+### Stats
+### Hard (1/9)
+- [ ] [857] Minimum cost to hire K workers
+- [ ] [818] Race Car
+- [ ] [358] Rearrange string K distance apart
+- [x] [23] Merge K sorted lists
+- [ ] [407] Trapping rain water 2
+- [ ] [759] Employee free time
+- [ ] [295] Median from data stream
+- [ ] [218] Skyline problem
+- [ ] [239] Sliding window maximum
+
+### Medium (4/9)
+- [x] [253] Meeting Rooms 2
+- [x] [378] K-th smallest element in a sorted matrix
+- [ ] [659] Split array into consecutive subsequences
+- [x] [347] Top K frequent elements
+- [x] [787] Cheapest flights within K stops
+- [ ] [692] Top K frequent words
+- [ ] [767] Reorganize string
+- [ ] [373] Find K pairs with smallest sums
+- [ ] [264] Ugly Number 2
+
+
 ## Stacks
 ### Stats (9/20)
-### Hard (0/4)
+### Hard (1/4)
 - [ ] [224]  Basic Calculator
-- [ ] [42]  Trapping rain water
+- [x] [42]  Trapping rain water
 - [ ] [84]  Largest rectangle in histogram
 - [ ] [316]  Remove duplicate letters
 
