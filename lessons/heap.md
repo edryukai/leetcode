@@ -57,7 +57,7 @@
 * In a group of K people,
     * capt determines the ratio.
     * From the equation in first step, `final_wage[x] = ratio[capt] * qual[x]`
-    * So if we fix the capt, we fix a ratio and we can get final_wage of everyone in the group
+    * So if we fix the capt, we fix a ratio and we can get `final_wage` of everyone in the group
 * Naively, this can be done greedily by fixing ratio and trying out all workers to see which k workers are best
 * Optimally, we note a few things:
     * `total_wage = ratio * qual[1] + ratio * qual[2] + ... + ratio * qual[k]`
@@ -70,7 +70,26 @@
         * Think about it. Pick some random guy in the group. This guy has some wage and some quality
         * But the ratio is fixed, so his wage doesn't matter. So the only factor that affects our total sum is quality
         * total_wage is directly proportional to quality so we kick the guy with max quality off the group
-    * tldr: for a given ratio of wage/quality, find minimum total_wage of k workers
+    * tldr: for a given ratio of wage/quality, find minimum `total_wage` of k workers
 * FAQ: When we remove the worker with highest quality, it could as well be our new worker. Then we would be using his ratio, while he is not there.
     * This case doesn't matter because, we will then be left with the same group as before, and we already calculate `total_wage` for that group with a lower ratio (since we are picking people based on sorted ratios, remember?)
 
+## [295] Median in a stream
+* Maintain two heaps `hi` and `lo` such that:
+    * `hi` is a min heap to store larger half of the numbers
+    * `lo` is a max heap to store smaller half of the numbers
+    * `lo` can hold at max 1 element more than `hi`
+* So median would be top of `lo` if `size(lo) > size(hi)` else it will be `(top(lo)+top(hi)/)2`
+* **Adding a number**
+    * Add the number to `lo`
+    * We must balance `hi`, so remove largest element from `lo` and offer it to `hi`
+    * It's possible that `hi` now has more elements than `lo` does. If so, remove smallest element from `hi` and offer it to `lo`
+* Complexity: `O(n)` for space, `O(log(n))` for median (including insertion)
+
+## [480] Sliding window median
+* Similar to median in stream, we can maintain two heaps, one `lo` and one `hi` with same constraints
+* The only difference would be, as the window moves
+    * We just added a number in the above question
+    * Here we also remove a number
+* On further thought, we notice that heaps are bad for arbitrary removal
+* Both of these operations can be done by effectively using a balanced BST so use Treemaps!

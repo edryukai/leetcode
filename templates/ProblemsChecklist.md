@@ -20,7 +20,7 @@
 
 ## Heaps
 ### Stats
-### Hard (4/10)
+### Hard (6/10)
 - [x] [857] Minimum cost to hire K workers
 - [ ] [818] Race Car
 - [ ] [358] Rearrange string K distance apart
@@ -28,9 +28,9 @@
 - [x] [407] Trapping rain water 2
 - [x] [42] Trapping rain water 1
 - [ ] [759] Employee free time
-- [ ] [295] Median from data stream
+- [x] [295] Median from data stream
 - [ ] [218] Skyline problem
-- [ ] [239] Sliding window maximum
+- [x] [239] Sliding window maximum
 
 ### Medium (4/9)
 - [x] [253] Meeting Rooms 2
