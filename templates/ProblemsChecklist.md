@@ -20,12 +20,13 @@
 
 ## Heaps
 ### Stats
-### Hard (1/9)
-- [ ] [857] Minimum cost to hire K workers
+### Hard (4/10)
+- [x] [857] Minimum cost to hire K workers
 - [ ] [818] Race Car
 - [ ] [358] Rearrange string K distance apart
 - [x] [23] Merge K sorted lists
-- [ ] [407] Trapping rain water 2
+- [x] [407] Trapping rain water 2
+- [x] [42] Trapping rain water 1
 - [ ] [759] Employee free time
 - [ ] [295] Median from data stream
 - [ ] [218] Skyline problem
@@ -51,17 +52,17 @@
 - [ ] [84]  Largest rectangle in histogram
 - [ ] [316]  Remove duplicate letters
 
-### Medium (4/11)
-- [ ] [173]  BST Iterator
+### Medium (8/11)
+- [x] [173]  **BST Iterator**
 - [x] [103]  Zig zag level order traversal
-- [ ] [94]  Binary Tree Inorder traversal
+- [x] [94]  Binary Tree Inorder traversal
 - [ ] [853]  Car fleet
 - [x] [503]  **Next Greater Element 2**
 - [x] [556]  Next Greater Element 3
 - [x] [739]  Daily temperatures
 - [ ] [394]  Decode string
-- [ ] [636]  Exclusive Time of functions
-- [ ] [250]  Evaluate Reverse Polish Notation
+- [x] [636]  Exclusive Time of functions
+- [x] [250]  Evaluate Reverse Polish Notation
 - [ ] [341]  Flatten Nested List Iterator
 
 ### Easy (5/5)
