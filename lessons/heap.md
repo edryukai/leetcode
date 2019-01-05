@@ -46,6 +46,7 @@
 * Note: Visualization (5 min): https://youtu.be/cJayBq38VYw
 
 ## [659] Split array into consecutive subsequences 
+* **Q:** You are given an integer array sorted in ascending order (may contain duplicates), you need to split them into several subsequences, where each subsequences consist of at least 3 consecutive integers. Return whether you can make such a split.
 * Think of subsequences as intervals. You need to find the right interval for a current number 
 * The right interval would be the one with the largest "end" so far, since we have array in a sorted fashion
 * In case of tie break, one with shorter length will be returned
@@ -93,3 +94,8 @@
     * Here we also remove a number
 * On further thought, we notice that heaps are bad for arbitrary removal
 * Both of these operations can be done by effectively using a balanced BST so use Treemaps!
+
+## [759] Employee free time
+* Similar to merging k sorted lists
+* Thinking: input lists are sorted, and you need to find common free times which you can get by first merging them, and second finding out intervals that are free after all busy times are merged
+

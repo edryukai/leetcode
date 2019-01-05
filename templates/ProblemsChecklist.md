@@ -12,22 +12,33 @@
 
 # Topics currently under progress
 - [Stacks](#stacks)
+- [Heaps](#heaps)
 - [Binary Search Tree](#binary-search-tree)
+- [Hash Table](#hash-table)
 
 # Finished Topics
 - [Queue](#queue)
 - [Divide and Conquer](#divide-and-conquer)
 
+## Hash Table
+### Stats (Unsolved qns only first)
+### Hard
+### Medium
+### Easy (3/3)
+- [x] [463] Island perimeter
+- [x] [720] Longest word in dictionary
+- [x] [387] First unique character in a string 
+
 ## Heaps
 ### Stats
-### Hard (6/10)
+### Hard (7/10)
 - [x] [857] Minimum cost to hire K workers
 - [ ] [818] Race Car
 - [ ] [358] Rearrange string K distance apart
 - [x] [23] Merge K sorted lists
 - [x] [407] Trapping rain water 2
 - [x] [42] Trapping rain water 1
-- [ ] [759] Employee free time
+- [x] [759] Employee free time
 - [x] [295] Median from data stream
 - [ ] [218] Skyline problem
 - [x] [239] Sliding window maximum
@@ -41,7 +52,7 @@
 - [ ] [692] Top K frequent words
 - [ ] [767] Reorganize string
 - [ ] [373] Find K pairs with smallest sums
-- [ ] [264] Ugly Number 2
+- [x] [264] Ugly Number 2
 
 
 ## Stacks
