@@ -1,6 +1,13 @@
 ## ToDo
 - [ ] [862] Shortest subarray with sum at least k
 
+## Union Find
+### Hard
+### Medium
+- [x] [947] Most Stones removed with same row or column
+
+### Easy
+
 ## Dynamic Programming
 ### Hard 
 - [ ] [363] Max sum of rectangle no larger than k
@@ -43,13 +50,13 @@
 - [ ] [218] Skyline problem
 - [x] [239] Sliding window maximum
 
-### Medium (4/9)
+### Medium (6/9)
 - [x] [253] Meeting Rooms 2
 - [x] [378] K-th smallest element in a sorted matrix
 - [ ] [659] Split array into consecutive subsequences
 - [x] [347] Top K frequent elements
 - [x] [787] Cheapest flights within K stops
-- [ ] [692] Top K frequent words
+- [x] [692] Top K frequent words
 - [ ] [767] Reorganize string
 - [ ] [373] Find K pairs with smallest sums
 - [x] [264] Ugly Number 2
