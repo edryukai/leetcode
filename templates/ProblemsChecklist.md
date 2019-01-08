@@ -1,13 +1,6 @@
 ## ToDo
 - [ ] [862] Shortest subarray with sum at least k
 
-## Union Find
-### Hard
-### Medium
-- [x] [947] Most Stones removed with same row or column
-
-### Easy
-
 ## Dynamic Programming
 ### Hard 
 - [ ] [363] Max sum of rectangle no larger than k
@@ -26,6 +19,7 @@
 # Finished Topics
 - [Queue](#queue)
 - [Divide and Conquer](#divide-and-conquer)
+- [Union Find](#union-find)
 
 ## Hash Table
 ### Stats (Unsolved qns only first)
@@ -141,6 +135,24 @@
 ### Easy (2/2)
 - [x] [53] Maximum subarray (Kadane)
 - [x] [169] Majority Element 1
+
+## Union Find
+### Hard (5/5)
+- [x] [305] Number of islands 2
+- [x] [803] Bricks falling when removed
+- [x] [685] Redundant connection 2
+- [x] [128] Longest consecutive sequence
+- [x] [765] Couples holding hands
+
+### Medium (8/8)
+- [x] [947] Most Stones removed with same row or column
+- [x] [200] Number of islands 1
+- [x] [684] Redundant connection
+- [x] [737] Sentence similarity 2
+- [x] [130] Surrounded regions
+- [x] [261] Graph valid tree
+- [x] [721] Accounts merge
+- [x] [399] Evaluate division
 
 // Go through solved questions and write down learnings (ex: stack and queue qns)
 // Also DQ and BST qns
