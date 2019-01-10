@@ -60,16 +60,16 @@ public class Solution {
         int bulls = 0, cows = 0;
         int[] count = new int[10];
 
+        // Scan one by one
         for(int i = 0; i < secret.Length; i++) {
-            int s = secret[i]-'0';
-            int g = guess[i]-'0';
-
-            if(s == g) bulls++;
+            if(secret[i] == guess[i]) bulls++;
             else {
-                if(count[s] < 0) cows++;
-                if(count[g] > 0) cows++;
-                count[s]++;
-                count[g]--;
+                // this becomes -ve only if guess[i] decreased it. And now we're encountering it in secret
+                // so it's a cow. Similarly we can argue for the line below this too
+                if(count[secret[i]-'0'] < 0) cows++;
+                if(count[guess[i]-'0'] > 0) cows++;
+                count[secret[i]-'0']++;
+                count[guess[i]-'0']--;
             }
         }
         return string.Format("{0}A{1}B",bulls,cows);
