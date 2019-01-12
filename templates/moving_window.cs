@@ -80,3 +80,83 @@ public class Solution {
         return max;
     }
 }
+
+// Min window substring
+
+// if we encountered a char that's in T, and we haven't met the min char match yet, increment match counter
+// in any case, we will increment windowcount
+// we only need to decrease it if start is moved to right
+public class Solution {
+    int[] tcount = new int[256];
+    int[] windowcount = new int[256];
+    
+    public string MinWindow(string s, string t) {
+        string res = "";
+        int match = 0, i = 0, minLen = Int32.MaxValue;
+
+        foreach(char x in t) {
+            tcount[x]++;
+        }
+
+        for(int j = 0; j < s.Length; j++) {
+            char curr = s[j];
+
+            if(tcount[curr] > 0) {
+                if(windowcount[curr] < tcount[curr]) {
+                    match++;
+                }
+            }
+            windowcount[curr]++;
+            
+            // the moment we have a valid window, check if it's min and then break validity
+            if(match == t.Length) {
+                // invalidate window
+                while(i < s.Length && match == t.Length) {
+                    windowcount[s[i]]--;
+                    // decreast match if we moved past a valid char
+                    if(tcount[s[i]] > 0 && windowcount[s[i]] < tcount[s[i]])     
+                        match--;
+                    i++;
+                }
+                // store the current valid candidate (note that we have moved i one place ahead from a valid position)
+                string candidate = s.Substring(i-1,j-(i-1)+1);
+                if(candidate.Length < minLen) { res = candidate; minLen = res.Length; }
+            }
+        }
+
+        return minLen == Int32.MaxValue ? "" : res;
+    }
+}
+
+
+// 3 M https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+// Moving window
+public class Solution {
+    int[] count = new int[256];
+    
+    public int LengthOfLongestSubstring(string s) {
+        if(s == null || s.Length == 0) return 0;
+        int i = 0, max = 1;
+        bool repeatchars = false;
+        
+        for(int j = 0; j < s.Length; j++) {
+            char curr = s[j];
+            if(count[curr] > 0) {
+                repeatchars = true;
+            }
+            count[curr]++;
+            
+            while(repeatchars) {
+                count[s[i]]--;
+                // we moved past the char, but we still have a count, aka we moved past a repeated char
+                if(count[s[i]] > 0) { 
+                    repeatchars = false;
+                }
+                i++;
+            }
+            max = Math.Max(max,j-i+1);
+        }
+        
+        return max;
+    }
+}
