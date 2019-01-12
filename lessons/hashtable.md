@@ -23,3 +23,19 @@
 ## [299](https://github.com/edryukai/leetcode/blob/master/src/LC299.cs) Bulls and Cows
 * Idea is to scan bulls and cows simultaneously while increasing or decreasing count[] array
 * Check the solution for better detail
+
+## [205](https://leetcode.com/problems/isomorphic-strings/) Isomorphic strings
+* Important edge case: If a destination string char has already been mapped to a different source char, we exit
+
+## [734](https://leetcode.com/submissions/detail/189115403/) Sentence Similarity 1 and 2
+* In sentence similarity 1, transitivity between similar words doesn't exist so we use hash map
+* In sentence similarity 2, transitivity exists. So we use union find
+* Good edge cases:
+    * More than one word can map to a key
+    * Have to check for both `s1[i]` and `s2[i]` in dict
+
+## [694](https://leetcode.com/problems/number-of-distinct-islands/solution/) Number of distinct islands with same shape
+* When we start a depth-first search on the top-left square of some island, the path taken by our depth-first search will be the same if and only if the shape is the same. 
+* We can exploit this by recording the path we take as our shape - keeping in mind to record both when we enter and when we exit the function
+* It's a DFS Question actually
+
