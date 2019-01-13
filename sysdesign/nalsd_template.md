@@ -55,6 +55,7 @@
     * Bottleneck:
         1. Can my network line support the amount of data that is being handled by this component? (since there's more new data)
         2. Storage has limitations on QPS, IOPS and Latency. How many machines would I need to support my net QPS?
+
 Component | Max (Write) | Max (Read) | Latency | Computed latency per query
 ----------|-------------|------------|---------|----------------------------
 HDD       | 300 QPS     | 400 QPS    | (3 ms seek + 50 MB/s read sequential + 1.5 MB/s read random) | (3 ms seek + 1.2 MB/s write random + 30 MB/s write sequential) 
