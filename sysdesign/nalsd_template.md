@@ -83,6 +83,16 @@ ComponentName | Bandwidth | Footprint | Storage | Footprint | Throughput | Laten
 * Account for spikes in traffic
 * Reduce footprint by introducing ELB, distributed queues, nosql dbs etc.
 
-## 7. ToDo
+## 7. Useful stuff to know
+
+Entity | Value
+-------|------
+1B per day | 12000 per second
+Convert anything from day to second | divide by pow(10,5) and increase it by 12%
+1 year | PI * pow(10,7) seconds
+1 quarter | pow(10,7) seconds
+1 month | 1/3 * pow(10,7) seconds
+
+## 8. ToDo
 
 * Throughput and latency numbers for caches, loadbalancers, nosql databases
