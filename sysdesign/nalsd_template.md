@@ -59,7 +59,7 @@
 
 Component | Max (Write) | Max (Read) | Latency | Computed latency per query
 ----------|-------------|------------|---------|----------------------------
-HDD       | 300 QPS     | 400 QPS    | 5 ms seek + Sequential read 20-30 MB/s or 0.05 ms for 1kB / Random read 1.5 MB/s or 2.5 ms for 1kB) | (3 ms seek + 1.2 MB/s write random + 30 MB/s write sequential) 
+HDD       | 300 QPS     | 400 QPS    | 5 ms seek + Read 20-30 MB/s or 0.05 ms for 1kB) | Write can be same as read speed 
 SSD       | 60000 QPS   | 90000 QPS  | 1 GB/s  read | 0.5 GB/s write |
 RAM       | doesn't matter | doesn't matter | 4 GB/s | 
 
