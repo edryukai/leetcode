@@ -54,12 +54,12 @@
         2. What is the data inflow + outflow of this component? (since this is compute, we might be sending out additional data, or storing additional data)
     * Bottleneck:
         1. Can my network line support the amount of data that is being handled by this component? (since there's more new data)
-        2. Storage has limitations on QPS, IOPS and Latency. How many machines would I need to support my net QPS?
+        2. Storage has limitations on QPS, IOPS and Latency. Calculate how many machines would I need to support my net qps after computing `latency per query` from table below
 
 Component | Max (Write) | Max (Read) | Latency | Computed latency per query
 ----------|-------------|------------|---------|----------------------------
-HDD       | 300 QPS     | 400 QPS    | (3 ms seek + 50 MB/s read sequential + 1.5 MB/s read random) | (3 ms seek + 1.2 MB/s write random + 30 MB/s write sequential) 
-SSD       | 60000 QPS   | 90000 QPS  | 1 GB/s  read, 0.5 GB/s write |
+HDD       | 300 QPS     | 400 QPS    | 3 ms seek + Sequential read 50 MB/s or 0.02 ms for 1kB / Random read 1.5 MB/s or 2.5 ms for 1kB) | (3 ms seek + 1.2 MB/s write random + 30 MB/s write sequential) 
+SSD       | 60000 QPS   | 90000 QPS  | 1 GB/s  read | 0.5 GB/s write |
 RAM       | doesn't matter | doesn't matter | 4 GB/s | 
 
 * **Important considerations**
