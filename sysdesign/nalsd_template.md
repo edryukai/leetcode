@@ -55,10 +55,11 @@
     * Bottleneck:
         1. Can my network line support the amount of data that is being handled by this component? (since there's more new data)
         2. Storage has limitations on QPS, IOPS and Latency. Calculate how many machines would I need to support my net qps after computing `latency per query` from table below
+        3. Note: according to 2012 Jeff Dean slide, disk seek is 10 ms, most current day disks do it at 3-5 ms
 
 Component | Max (Write) | Max (Read) | Latency | Computed latency per query
 ----------|-------------|------------|---------|----------------------------
-HDD       | 300 QPS     | 400 QPS    | 3 ms seek + Sequential read 50 MB/s or 0.02 ms for 1kB / Random read 1.5 MB/s or 2.5 ms for 1kB) | (3 ms seek + 1.2 MB/s write random + 30 MB/s write sequential) 
+HDD       | 300 QPS     | 400 QPS    | 5 ms seek + Sequential read 20-30 MB/s or 0.05 ms for 1kB / Random read 1.5 MB/s or 2.5 ms for 1kB) | (3 ms seek + 1.2 MB/s write random + 30 MB/s write sequential) 
 SSD       | 60000 QPS   | 90000 QPS  | 1 GB/s  read | 0.5 GB/s write |
 RAM       | doesn't matter | doesn't matter | 4 GB/s | 
 
@@ -74,7 +75,7 @@ RAM       | doesn't matter | doesn't matter | 4 GB/s |
 ## 5. Generate the following final table:
 
 ComponentName | Bandwidth | Footprint | Storage | Footprint | Throughput | Latency | Footprint 
----------------|-----------|-----------|---------|-----------|------------|---------|-----------
+--------------|-----------|-----------|---------|-----------|------------|---------|-----------
 
 ## 6. Make design more robust
 
